@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Work+Sans:wght@500&display=swap');
+
+*, *::after *::before {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    background-color: blueviolet;
+    font-family: sans-serif;
+    
+}
+
+#grid-parent {
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.single-row {
+    display: grid;
+}
+
+.color-changing {
+    animation: colorful 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorful {
+0% {
+    background-color: mediumslateblue;
+}
+20% {
+    background-color: blanchedalmond;
+}
+40% {
+    background-color: white;
+}
+60% {
+    background-color: black;
+}
+80% {
+    background-color: darkgrey;
+}
+100% {
+    background-color: mediumblue;
+}
+}
+
+.text-changing {
+    animation: colorful-text 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorful-text {
+    0% {
+        color: mediumslateblue;
+    }
+    20% {
+        color: blanchedalmond;
+    }
+    40% {
+        color: white;
+    }
+    60% {
+        color: black;
+    }
+    80% {
+        color: darkgrey;
+    }
+    100% {
+        color: mediumslateblue;
+    }
+}
+/* tittle*/
+#intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#intro h1 {
+    font-family: sans-serif;
+    color: black;
+    margin-right: 100px;
+    font-size: 3em;
+}
+
+/*new grid button*/
+#new_grid {
+    background: white;
+    border: 2px solid f3f3f3;
+    outline: none;
+    padding: 1em 2em;
+    font-size: 1em;
+    font-weight: bold;
+    color: rgb(17, 16, 16);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+/*hoover*/
+#New-Grid:hover {
+    background-color: lime;
+    color: limegreen;
+}
